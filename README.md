@@ -159,7 +159,60 @@ The integrated exercise processes customer, order, and product data by:
 - Calculating total sales, average order value, and order count
 - Sorting the report by total sales
 - Exporting the final result to `city_category_report.csv`
+  
 
+
+
+## Week 1 — Session 5: SQL Basics Lab 5
+### File
+
+- `sql_basics_lab_5.sql`
+
+### Concepts Practiced
+
+- Creating tables with `CREATE TABLE`
+- Defining columns and data types
+- Using `PRIMARY KEY`
+- Using `FOREIGN KEY`
+- Creating relationships between tables
+- Inserting data with `INSERT INTO`
+- Selecting data with `SELECT`
+- Selecting specific columns
+- Counting rows with `COUNT()`
+- Removing duplicate results with `DISTINCT`
+- Filtering data with `WHERE`
+- Using comparison operators
+- Filtering ranges with `BETWEEN`
+- Searching text patterns with `LIKE`
+- Sorting results with `ORDER BY`
+- Using aggregate functions:
+  - `AVG()`
+  - `MAX()`
+  - `MIN()`
+  - `COUNT()`
+- Grouping data with `GROUP BY`
+- Filtering grouped results with `HAVING`
+- Connecting tables with `JOIN`
+- Keeping all rows from one table with `LEFT JOIN`
+- Updating existing data with `UPDATE`
+- Deleting rows with `DELETE`
+- Using aliases with `AS`
+- Writing SQL comments to explain queries
+
+### Database Structure
+
+The lab uses two connected tables:
+
+- `Departments`
+- `Employees`
+
+The tables are connected through the `DepartmentID` column.
+
+```text
+Departments.DepartmentID
+            ↑
+            │
+Employees.DepartmentID
 ## Goal
 
 The goal of this repository is to build a strong foundation in Data Engineering step by step.
