@@ -1,0 +1,7 @@
+city,category,total_sales,avg_order_value,order_count
+Bengaluru,Unknown,64900.0,64900.0,1
+Pune,Displays,9440.0,9440.0,1
+Mumbai,Unknown,1770.0,1770.0,1
+Pune,Accessories,1416.0,1416.0,1
+Unknown,Unknown,1062.0,1062.0,1
+Mumbai,Accessories,413.59,413.59,1
