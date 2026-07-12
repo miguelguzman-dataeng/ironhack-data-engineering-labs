@@ -102,7 +102,63 @@ The final integrated exercise processes raw daily sales data by:
 - Calculating total, count, mean, minimum, and maximum
 - Returning structured results with reusable functions
 - Printing a formatted sales summary
+  
+## Week 1 — Session 4: Pandas for Data Handling
 
+### File
+
+- `lab_script04.py`
+
+### Data Files
+
+- `customers.csv`
+- `orders.csv`
+- `products.json`
+- `orders.xlsx`
+
+### Generated Output Files
+
+- `sales_report.csv`
+- `sales_report.json`
+- `city_category_report.csv`
+
+### Concepts Practiced
+
+- Creating pandas `Series` and `DataFrame` objects
+- Creating DataFrames from Python dictionaries
+- Reading CSV files with `pd.read_csv()`
+- Reading Excel worksheets with `pd.read_excel()`
+- Reading JSON files with `pd.read_json()`
+- Inspecting datasets with `head()`, `tail()`, `shape`, `info()`, and `describe()`
+- Selecting single and multiple columns
+- Filtering rows with Boolean conditions
+- Detecting missing values with `isnull()`
+- Replacing missing values with `fillna()`
+- Removing incomplete rows with `dropna()`
+- Renaming columns with `rename()`
+- Creating derived columns
+- Calculating values with 18% tax
+- Sorting rows with `sort_values()`
+- Grouping and aggregating data with `groupby()` and `agg()`
+- Calculating totals, averages, and order counts
+- Merging customer, order, and product datasets
+- Performing SQL-style left joins with `pd.merge()`
+- Exporting cleaned results to CSV and JSON
+- Building a complete mini ETL workflow
+
+### Mini ETL Lab
+
+The integrated exercise processes customer, order, and product data by:
+
+- Reading data from CSV and JSON files
+- Merging orders with customer information
+- Adding product category information
+- Replacing missing cities and categories with `Unknown`
+- Creating an `amount_with_tax` column
+- Grouping results by city and category
+- Calculating total sales, average order value, and order count
+- Sorting the report by total sales
+- Exporting the final result to `city_category_report.csv`
 
 ## Goal
 
