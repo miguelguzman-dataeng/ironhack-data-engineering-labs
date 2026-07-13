@@ -215,6 +215,71 @@ Departments.DepartmentID
 Employees.DepartmentID
 ## Goal
 
+
+
+## WEEK 2 — SESSION 1: Data Engineering Fundamentals
+
+### File
+
+* `week_2_session_1_data_engineering_fundamentals.docx`
+
+### Concepts Practiced
+
+* Understanding the complete Data Engineering pipeline lifecycle
+* Identifying source, ingestion, storage, processing, serving, and monitoring components
+* Classifying systems as **OLTP** or **OLAP**
+* Choosing between **batch**, **micro-batch**, and **streaming** processing
+* Understanding **ETL** versus **ELT**
+* Understanding **schema-on-write** versus **schema-on-read**
+* Mapping different source types:
+
+  * Relational databases
+  * CSV files
+  * REST APIs
+  * Application logs
+  * Mobile and web events
+  * NoSQL databases
+* Designing Bronze, Silver, and Gold data layers
+* Understanding the difference between a **Data Lake** and a **Data Warehouse**
+* Selecting ingestion tools such as:
+
+  * Apache Airflow
+  * Apache NiFi
+  * Apache Kafka
+  * Airbyte
+  * Debezium
+  * Filebeat
+* Selecting processing tools such as:
+
+  * Apache Spark
+  * Spark Structured Streaming
+  * Apache Flink
+  * Python and Pandas
+  * dbt
+* Designing a daily batch pipeline from PostgreSQL to a Data Warehouse
+* Using Parquet as a columnar file format
+* Partitioning data by date
+* Writing SQL to calculate daily revenue per product
+* Designing a high-volume clickstream pipeline
+* Enriching streaming events with user-profile data
+* Using five-minute sliding windows
+* Handling late and out-of-order events with watermarks
+* Understanding at-least-once and exactly-once processing
+* Planning retries, monitoring, alerts, and data-quality checks
+* Understanding the small-files problem and file compaction
+
+### Labs Completed
+
+1. Identify pipeline components from a scenario
+2. Classify systems as OLTP or OLAP
+3. Classify processing as Batch or Streaming
+4. Choose between ETL and ELT
+5. Map sources to ingestion, storage, processing, and serving
+6. Design a batch e-commerce orders pipeline
+7. Design a streaming clickstream pipeline
+8. Choose ingestion tools for APIs, files, and logs
+
+
 The goal of this repository is to build a strong foundation in Data Engineering step by step.
 
 This is the beginning of my transition into Data Engineering, with a focus on clean code, consistent practice, reusable functions, data transformation, and professional growth.
