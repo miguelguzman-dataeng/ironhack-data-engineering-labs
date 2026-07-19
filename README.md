@@ -280,6 +280,176 @@ Employees.DepartmentID
 8. Choose ingestion tools for APIs, files, and logs
 
 
+# Week 2 — Data Engineering Fundamentals
+
+This week focused on core Data Engineering concepts, including relational and NoSQL databases, schema design, normalization, data lake architecture, query performance, partitioning, and file formats.
+
+The goal of these sessions was to understand how data is stored, modeled, processed, and optimized in real Data Engineering systems.
+
+---
+
+## Session 2 — Relational and NoSQL Database Fundamentals
+
+### Topics covered
+
+- Relational databases
+- NoSQL databases
+- ACID
+- BASE
+- Primary keys
+- Foreign keys
+- Referential integrity
+- Document databases
+- Key-value databases
+- Column-family databases
+- Graph databases
+- Eventual consistency
+
+### Practical exercises
+
+- Created relational tables with SQLite
+- Used primary and foreign keys
+- Joined employees with departments
+- Simulated an ACID transaction rollback
+- Created flexible document-style product data
+- Simulated a key-value cache
+- Simulated eventual consistency
+- Computed friends-of-friends using a graph structure
+
+### Main takeaway
+
+Relational and NoSQL databases solve different problems.
+
+Relational databases are strong for structured data, relationships, transactions, and consistency.
+
+NoSQL databases are useful when flexibility, scalability, high write throughput, or relationship traversal is more important.
+
+---
+
+## Session 3 — Schema Design, Normalization, and Denormalization
+
+### Topics covered
+
+- Entities and attributes
+- Primary keys and foreign keys
+- One-to-many relationships
+- Many-to-many relationships
+- First Normal Form (1NF)
+- Second Normal Form (2NF)
+- Third Normal Form (3NF)
+- OLTP schema design
+- Denormalization
+- Star schemas
+- Fact tables
+- Dimension tables
+- Grain
+- ETL mapping
+- Slowly Changing Dimension Type 2
+- Query performance trade-offs
+
+### Practical exercises
+
+- Identified entities from a flat e-commerce CSV
+- Designed relationships between Customer, Order, Product, and OrderItem
+- Converted repeating groups into atomic rows
+- Flattened nested product data using Python
+- Removed partial and transitive dependencies
+- Designed a normalized OLTP schema
+- Designed a denormalized reporting table
+- Created a star schema
+- Defined fact table grain
+- Sketched an ETL transformation
+- Modeled customer history using SCD Type 2
+- Compared denormalization strategies for reporting performance
+
+### Main takeaway
+
+Good schema design depends on the purpose of the system.
+
+OLTP systems usually benefit from normalized schemas because they reduce duplication and protect data integrity.
+
+Analytics systems often use denormalized models such as star schemas because they simplify reporting and improve query performance.
+
+---
+
+## Session 4 — Data Lake, Data Warehouse, and Lakehouse Architecture
+
+### Topics covered
+
+- Data Lake
+- Data Warehouse
+- Lakehouse
+- Schema-on-read
+- Schema-on-write
+- Bronze layer
+- Silver layer
+- Gold layer
+- Separation of compute and storage
+- Metadata
+- Data catalogs
+- Data governance
+
+### Architecture flow
+
+```text
+Data Sources
+↓
+Bronze
+Raw / original data
+↓
+Silver
+Cleaned / standardized / validated data
+↓
+Gold
+Business-ready data
+↓
+Dashboards / Analytics / Reporting
+
+
+Session 5 — Query Performance, Storage Layout, and Data Formats
+Topics covered
+Full table scans
+Indexes
+Query plans
+Filtering early
+Selecting only required columns
+Partitioning
+Partition pruning
+Small-files problem
+File compaction
+CSV
+Parquet
+Avro
+ORC
+Row-oriented storage
+Columnar storage
+Compression
+Analytical storage design
+Practical exercises
+Used EXPLAIN QUERY PLAN
+Compared query behavior before and after creating an index
+Compared filtering in Python with filtering and aggregation in SQL
+Designed year/month partition layouts
+Combined multiple small CSV files
+Compared common Data Engineering file formats
+Created an Avro-style schema
+Created a partitioned folder structure using Python
+Proposed improvements for analytical storage performance
+Main takeaway
+
+Query performance depends heavily on how data is stored and accessed.
+
+Important optimization ideas include:
+
+avoid unnecessary full table scans
+use indexes when appropriate
+filter data early
+select only required columns
+partition data based on common query patterns
+avoid excessive small files
+use columnar formats such as Parquet for analytical workloads
+
+
 The goal of this repository is to build a strong foundation in Data Engineering step by step.
 
 This is the beginning of my transition into Data Engineering, with a focus on clean code, consistent practice, reusable functions, data transformation, and professional growth.
